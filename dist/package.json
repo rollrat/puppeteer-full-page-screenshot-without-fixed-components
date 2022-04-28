@@ -1,0 +1,19 @@
+{
+  "name": "puppeteer-full-page-screenshot-without-fixed-components",
+  "version": "1.0.2",
+  "description": "Full Screenshot Method for Puppeteer",
+  "repository": "https://github.com/rollrat/puppeteer-full-page-screenshot-without-fixed-components",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc -p .",
+    "dev": "tsc-watch --onSuccess \"ts-node index.ts\" ",
+    "test": "npx ts-jest --setupFiles dotenv/config --forceExit --detectOpenHandles"
+  },
+  "author": "rollrat <rollrat.cse@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "merge-img": "^2.1.3"
+  }
+}
