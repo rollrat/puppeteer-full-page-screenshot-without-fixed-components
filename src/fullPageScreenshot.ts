@@ -18,7 +18,7 @@ const defaultOptions = {
    fullPage: false,
    captureBeyondViewport: false,
    type: 'png',
-   delay: 100,
+   delay: 0,
    path: null,
 };
 

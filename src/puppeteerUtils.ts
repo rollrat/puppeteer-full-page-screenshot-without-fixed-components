@@ -16,5 +16,4 @@ export async function removeFixedComponents(page: Page): Promise<void> {
       }
     }
   });
-
 }

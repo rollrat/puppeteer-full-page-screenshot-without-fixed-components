@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import fullPageScreenshot from "./fullPageScreenshot";
+import fullPageScreenshot from "../src/fullPageScreenshot";
 
 // https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts
 const iPhone = puppeteer.devices["iPhone 13 Pro Max"];
@@ -13,7 +13,7 @@ const iPhone = puppeteer.devices["iPhone 13 Pro Max"];
     "https://n.news.naver.com/mnews/article/016/0001984416?sid=101"
   );
 
-  await fullPageScreenshot(page, { path: "./page.png" });
+  await fullPageScreenshot(page, { path: "./page.png", delay: 100 });
 
   await browser.close();
 })();
